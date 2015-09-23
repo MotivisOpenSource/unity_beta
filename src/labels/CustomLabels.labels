@@ -1,32 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
     <labels>
-        <fullName>About_Me</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>About Me</shortDescription>
-        <value>About Me</value>
-    </labels>
-    <labels>
         <fullName>BTN_Accept</fullName>
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>BTN Accept</shortDescription>
         <value>Accept</value>
-    </labels>
-    <labels>
-        <fullName>BTN_All_Groups</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>BTN_All_Groups</shortDescription>
-        <value>All Groups</value>
-    </labels>
-    <labels>
-        <fullName>BTN_AskToJoin</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>BTN_AskToJoin</shortDescription>
-        <value>Ask to Join</value>
     </labels>
     <labels>
         <fullName>BTN_Back</fullName>
@@ -64,20 +43,6 @@
         <value>Clone</value>
     </labels>
     <labels>
-        <fullName>BTN_Comment</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>BTN Comment</shortDescription>
-        <value>Comment</value>
-    </labels>
-    <labels>
-        <fullName>BTN_CreateGroup_ApplyTags</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>BTN CreateGroup ApplyTags</shortDescription>
-        <value>Apply Tags</value>
-    </labels>
-    <labels>
         <fullName>BTN_Create_Event</fullName>
         <language>en_US</language>
         <protected>true</protected>
@@ -111,13 +76,6 @@
         <protected>true</protected>
         <shortDescription>BTN Decline</shortDescription>
         <value>Decline</value>
-    </labels>
-    <labels>
-        <fullName>BTN_Delete</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>BTN Delete</shortDescription>
-        <value>Delete</value>
     </labels>
     <labels>
         <fullName>BTN_Download</fullName>
@@ -155,13 +113,6 @@
         <value>Edit Resource</value>
     </labels>
     <labels>
-        <fullName>BTN_Follow</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>Follow button/action</shortDescription>
-        <value>Follow</value>
-    </labels>
-    <labels>
         <fullName>BTN_Following</fullName>
         <language>en_US</language>
         <protected>true</protected>
@@ -190,32 +141,11 @@
         <value>Join</value>
     </labels>
     <labels>
-        <fullName>BTN_My_Groups</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>BTN_My_Groups</shortDescription>
-        <value>My Groups</value>
-    </labels>
-    <labels>
-        <fullName>BTN_New_Group</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>BTN_New_Group</shortDescription>
-        <value>New Group</value>
-    </labels>
-    <labels>
         <fullName>BTN_New_Message</fullName>
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>BTN New Message</shortDescription>
         <value>New Message</value>
-    </labels>
-    <labels>
-        <fullName>BTN_OK</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>Button Ok</shortDescription>
-        <value>OK</value>
     </labels>
     <labels>
         <fullName>BTN_Preview</fullName>
@@ -232,13 +162,6 @@
         <value>Share This Item</value>
     </labels>
     <labels>
-        <fullName>BTN_Recommended_Groups</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>BTN_Recommended_Groups</shortDescription>
-        <value>Recommended Groups</value>
-    </labels>
-    <labels>
         <fullName>BTN_Save</fullName>
         <language>en_US</language>
         <protected>true</protected>
@@ -251,13 +174,6 @@
         <protected>true</protected>
         <shortDescription>Label Save Changes</shortDescription>
         <value>Save Changes</value>
-    </labels>
-    <labels>
-        <fullName>BTN_Search</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>BTN_Search</shortDescription>
-        <value>Search</value>
     </labels>
     <labels>
         <fullName>BTN_Select</fullName>
@@ -309,13 +225,6 @@
         <value>Upload Resource</value>
     </labels>
     <labels>
-        <fullName>Contact</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>Contact</shortDescription>
-        <value>Contact</value>
-    </labels>
-    <labels>
         <fullName>ERR_1_Breaking_News</fullName>
         <language>en_US</language>
         <protected>false</protected>
@@ -330,32 +239,11 @@
         <value>You may only have one record in each slot at any given time.  Please check your other News records to make sure there aren’t any overlapping records.</value>
     </labels>
     <labels>
-        <fullName>ERR_Cant_Found_Group</fullName>
+        <fullName>ERR_Can_not_found_Topic</fullName>
         <language>en_US</language>
         <protected>true</protected>
-        <shortDescription>ERR Cant Found Group</shortDescription>
-        <value>Can`t found group:</value>
-    </labels>
-    <labels>
-        <fullName>ERR_Cant_Found_People</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>ERR Cant Found People</shortDescription>
-        <value>Can`t Found People</value>
-    </labels>
-    <labels>
-        <fullName>ERR_Community_Profile</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>Error: Community Profile</shortDescription>
-        <value>This contact must have a Community Profile before they can be enabled for the Community</value>
-    </labels>
-    <labels>
-        <fullName>ERR_CreateGroup_MaxTagMessage</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>ERR CreateGroup MaxTagMessage</shortDescription>
-        <value>You have reached the Maximum of &lt;setting number&gt; for this group.  You must remove a tag in order to add a tag.</value>
+        <shortDescription>ERR Can not found Topic</shortDescription>
+        <value>Error : Can&apos;t found Topic</value>
     </labels>
     <labels>
         <fullName>ERR_Create_Event_Dates</fullName>
@@ -379,11 +267,11 @@
         <value>You have exceeded the file size of 8mb or used incorrect file type.</value>
     </labels>
     <labels>
-        <fullName>ERR_Max_Group_Size_Exceeded</fullName>
+        <fullName>ERR_Maximum_number_topics</fullName>
         <language>en_US</language>
         <protected>true</protected>
-        <shortDescription>ERR Max Group Size Exceeded</shortDescription>
-        <value>Maximum group size was exceeded</value>
+        <shortDescription>ERR Maximum number topics</shortDescription>
+        <value>You&apos;ve reached the maximum number of topics. Remove a topic and try again.</value>
     </labels>
     <labels>
         <fullName>ERR_MissingImageLibrary</fullName>
@@ -419,6 +307,13 @@
         <protected>true</protected>
         <shortDescription>ERR_No_Records</shortDescription>
         <value>No records to display.</value>
+    </labels>
+    <labels>
+        <fullName>ERR_No_Topics_To_Display</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ERR No Topics To Display</shortDescription>
+        <value>No topics to display</value>
     </labels>
     <labels>
         <fullName>ERR_NotGroupManager</fullName>
@@ -463,60 +358,25 @@
         <value>This contact already has a Community Profile with this Record Type.</value>
     </labels>
     <labels>
+        <fullName>ERR_Topic_Not_Available</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ERR Topic Not Available</shortDescription>
+        <value>Topic Not Available</value>
+    </labels>
+    <labels>
+        <fullName>ERR_Topic_Not_Available_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ERR Topic Not Available Message</shortDescription>
+        <value>The topic you were trying to access could not be found. Another user may have deleted it, the topic may have been created without proper permissions, or a system error may have occurred.</value>
+    </labels>
+    <labels>
         <fullName>ERR_You_do_not_have_access_to_this_user</fullName>
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>ERR You do not have access to this user</shortDescription>
-        <value>You do`t have access to this user.</value>
-    </labels>
-    <labels>
-        <fullName>Feed_Nav_AllGroups</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Feed Nav AllGroups</shortDescription>
-        <value>All Group</value>
-    </labels>
-    <labels>
-        <fullName>Feed_Nav_AllPeople</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Feed Nav AllPeople</shortDescription>
-        <value>All People Testing</value>
-    </labels>
-    <labels>
-        <fullName>Feed_Nav_Bookmarked</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Feed Nav Bookmarked</shortDescription>
-        <value>Bookmarked</value>
-    </labels>
-    <labels>
-        <fullName>Feed_Nav_Feed</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>Feed Nav Feed</shortDescription>
-        <value>Feed</value>
-    </labels>
-    <labels>
-        <fullName>Feed_Nav_Groups</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Feed Nav Groups</shortDescription>
-        <value>Groups</value>
-    </labels>
-    <labels>
-        <fullName>Feed_Nav_Messages</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>Feed Nav Messages</shortDescription>
-        <value>Messages</value>
-    </labels>
-    <labels>
-        <fullName>Feed_Nav_MyGroups</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Feed Nav MyGroups</shortDescription>
-        <value>My Groups</value>
+        <value>You don`t have access to this user.</value>
     </labels>
     <labels>
         <fullName>Feed_Nav_People</fullName>
@@ -524,48 +384,6 @@
         <protected>false</protected>
         <shortDescription>Feed Nav People</shortDescription>
         <value>People</value>
-    </labels>
-    <labels>
-        <fullName>Feed_Nav_RecentlyViewed</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Feed Nav RecentlyViewed</shortDescription>
-        <value>Recently Viewed</value>
-    </labels>
-    <labels>
-        <fullName>Feed_Nav_RecommendedGroups</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Feed Nav RecommendedGroups</shortDescription>
-        <value>Recommended Groups</value>
-    </labels>
-    <labels>
-        <fullName>Feed_Nav_ToMe</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Feed Nav ToMe</shortDescription>
-        <value>To Me</value>
-    </labels>
-    <labels>
-        <fullName>Feed_Nav_WhatIFollow</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Feed Nav WhatIFollow</shortDescription>
-        <value>What I Follow</value>
-    </labels>
-    <labels>
-        <fullName>Feed_Nav_WhoIFollow</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Feed Nav WhoIFollow</shortDescription>
-        <value>Who I Follow</value>
-    </labels>
-    <labels>
-        <fullName>Feeds_Time</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>Feeds Time</shortDescription>
-        <value>more than a year;a year ago; months ago;a month ago; weeks ago;a week ago; days ago;yesterday; hours ago;a hour ago; minutes ago;a minute ago</value>
     </labels>
     <labels>
         <fullName>LBL_About_Me</fullName>
@@ -589,25 +407,11 @@
         <value>Add</value>
     </labels>
     <labels>
-        <fullName>LBL_AddMoreChoices</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL AddMoreChoices</shortDescription>
-        <value>Add More Choices</value>
-    </labels>
-    <labels>
         <fullName>LBL_AddToCalendar</fullName>
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Add to Calendar label</shortDescription>
         <value>Add to My Calendar</value>
-    </labels>
-    <labels>
-        <fullName>LBL_Add_Manager</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL Add Manager</shortDescription>
-        <value>Add Manager</value>
     </labels>
     <labels>
         <fullName>LBL_Add_Photo</fullName>
@@ -624,11 +428,11 @@
         <value>Add/Remove Members</value>
     </labels>
     <labels>
-        <fullName>LBL_Add_Tags</fullName>
+        <fullName>LBL_Add_To_Favorites</fullName>
         <language>en_US</language>
         <protected>true</protected>
-        <shortDescription>LBL Add Tags</shortDescription>
-        <value>Add Tags</value>
+        <shortDescription>LBL Add To Favorites</shortDescription>
+        <value>Add to favorites</value>
     </labels>
     <labels>
         <fullName>LBL_AgreeToTerms</fullName>
@@ -643,27 +447,6 @@
         <protected>true</protected>
         <shortDescription>Label All Groups</shortDescription>
         <value>All Groups</value>
-    </labels>
-    <labels>
-        <fullName>LBL_AllPeople</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL AllPeople</shortDescription>
-        <value>All People</value>
-    </labels>
-    <labels>
-        <fullName>LBL_All_Events</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL All Events</shortDescription>
-        <value>All Events</value>
-    </labels>
-    <labels>
-        <fullName>LBL_Answer</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>Label Answer</shortDescription>
-        <value>Answer</value>
     </labels>
     <labels>
         <fullName>LBL_Assign_New_Owner</fullName>
@@ -685,20 +468,6 @@
         <protected>true</protected>
         <shortDescription>Banner Image Text</shortDescription>
         <value>Welcome back &lt;br/&gt; Have a great semester</value>
-    </labels>
-    <labels>
-        <fullName>LBL_Bookmark</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL Bookmark</shortDescription>
-        <value>Bookmark</value>
-    </labels>
-    <labels>
-        <fullName>LBL_Bookmarked</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL Bookmarked</shortDescription>
-        <value>Bookmarked</value>
     </labels>
     <labels>
         <fullName>LBL_Campus_Updates</fullName>
@@ -734,13 +503,6 @@
         <protected>true</protected>
         <shortDescription>LBL Change Owner</shortDescription>
         <value>Change Owner</value>
-    </labels>
-    <labels>
-        <fullName>LBL_Choice</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL Choice</shortDescription>
-        <value>Choice</value>
     </labels>
     <labels>
         <fullName>LBL_Choose_from_Library</fullName>
@@ -855,13 +617,6 @@
         <value>Current Owner</value>
     </labels>
     <labels>
-        <fullName>LBL_Daily_Digest</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>LBL Daily Digest</shortDescription>
-        <value>Daily Digest</value>
-    </labels>
-    <labels>
         <fullName>LBL_Delete</fullName>
         <language>en_US</language>
         <protected>true</protected>
@@ -960,6 +715,13 @@
         <value>Edit Profile</value>
     </labels>
     <labels>
+        <fullName>LBL_Edit_Details</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL Edit Details</shortDescription>
+        <value>Edit Details</value>
+    </labels>
+    <labels>
         <fullName>LBL_Edit_Group</fullName>
         <language>en_US</language>
         <protected>true</protected>
@@ -974,27 +736,6 @@
         <value>Email Notifications</value>
     </labels>
     <labels>
-        <fullName>LBL_Email_Daily_Digest</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>LBL Email Daily Digest</shortDescription>
-        <value>Email Daily Digest</value>
-    </labels>
-    <labels>
-        <fullName>LBL_Email_Settings</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>LBL Email Settings</shortDescription>
-        <value>Email Settings</value>
-    </labels>
-    <labels>
-        <fullName>LBL_EventResultsTitle</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL EventResultsTitle</shortDescription>
-        <value>Event results found</value>
-    </labels>
-    <labels>
         <fullName>LBL_Event_Group</fullName>
         <language>en_US</language>
         <protected>true</protected>
@@ -1007,20 +748,6 @@
         <protected>true</protected>
         <shortDescription>LBL_Events</shortDescription>
         <value>Events</value>
-    </labels>
-    <labels>
-        <fullName>LBL_Every_Post</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>LBL Every Post</shortDescription>
-        <value>Every Post</value>
-    </labels>
-    <labels>
-        <fullName>LBL_Featured_News_Title</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL Featured News Title</shortDescription>
-        <value>Featured News Articles</value>
     </labels>
     <labels>
         <fullName>LBL_Feed</fullName>
@@ -1163,25 +890,11 @@
         <value>What changed?</value>
     </labels>
     <labels>
-        <fullName>LBL_Filter_by</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL Filter by</shortDescription>
-        <value>Filter by</value>
-    </labels>
-    <labels>
         <fullName>LBL_First</fullName>
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>LBL First</shortDescription>
         <value>First</value>
-    </labels>
-    <labels>
-        <fullName>LBL_Flag</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL Flag</shortDescription>
-        <value>Flag</value>
     </labels>
     <labels>
         <fullName>LBL_Follow</fullName>
@@ -1224,13 +937,6 @@
         <protected>true</protected>
         <shortDescription>LBL GroupManager</shortDescription>
         <value>Group Manager</value>
-    </labels>
-    <labels>
-        <fullName>LBL_GroupResultsTitle</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL GroupResultsTitle</shortDescription>
-        <value>Group results for</value>
     </labels>
     <labels>
         <fullName>LBL_Group_Files</fullName>
@@ -1282,13 +988,6 @@
         <value>Interests</value>
     </labels>
     <labels>
-        <fullName>LBL_LIke</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL LIke</shortDescription>
-        <value>Like</value>
-    </labels>
-    <labels>
         <fullName>LBL_Last</fullName>
         <language>en_US</language>
         <protected>true</protected>
@@ -1317,13 +1016,6 @@
         <value>Leave Group</value>
     </labels>
     <labels>
-        <fullName>LBL_Likes</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL Likes</shortDescription>
-        <value>Likes</value>
-    </labels>
-    <labels>
         <fullName>LBL_LikesPost</fullName>
         <language>en_US</language>
         <protected>true</protected>
@@ -1345,11 +1037,11 @@
         <value>Say something about this link...</value>
     </labels>
     <labels>
-        <fullName>LBL_Links</fullName>
+        <fullName>LBL_Load_More</fullName>
         <language>en_US</language>
         <protected>true</protected>
-        <shortDescription>LBL Links</shortDescription>
-        <value>Links</value>
+        <shortDescription>LBL Load More</shortDescription>
+        <value>Load More</value>
     </labels>
     <labels>
         <fullName>LBL_Location</fullName>
@@ -1359,25 +1051,11 @@
         <value>Location</value>
     </labels>
     <labels>
-        <fullName>LBL_Locked_Message</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL Locked Message</shortDescription>
-        <value>This record is locked by</value>
-    </labels>
-    <labels>
         <fullName>LBL_Logout</fullName>
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>LBL Logout</shortDescription>
         <value>Logout</value>
-    </labels>
-    <labels>
-        <fullName>LBL_Manage</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL Manage</shortDescription>
-        <value>Manage</value>
     </labels>
     <labels>
         <fullName>LBL_ManageDetails_Title</fullName>
@@ -1406,13 +1084,6 @@
         <protected>true</protected>
         <shortDescription>LBL ManageGroupPreferences</shortDescription>
         <value>Manage Group Preferences</value>
-    </labels>
-    <labels>
-        <fullName>LBL_Manage_Group</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL Manage this Group</shortDescription>
-        <value>Manage this Group</value>
     </labels>
     <labels>
         <fullName>LBL_Manager</fullName>
@@ -1513,13 +1184,6 @@
         <value>My Groups</value>
     </labels>
     <labels>
-        <fullName>LBL_MyMessages</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL MyMessages</shortDescription>
-        <value>My Messages</value>
-    </labels>
-    <labels>
         <fullName>LBL_My_Account</fullName>
         <language>en_US</language>
         <protected>true</protected>
@@ -1534,32 +1198,18 @@
         <value>My Discussions</value>
     </labels>
     <labels>
-        <fullName>LBL_My_Events</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL My Events</shortDescription>
-        <value>My Events</value>
-    </labels>
-    <labels>
-        <fullName>LBL_My_Group_Events</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL My Group Events</shortDescription>
-        <value>My Group Events</value>
-    </labels>
-    <labels>
-        <fullName>LBL_My_Groups</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL My Groups</shortDescription>
-        <value>My Groups</value>
-    </labels>
-    <labels>
         <fullName>LBL_My_News</fullName>
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Label My News</shortDescription>
         <value>My News</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Name</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL Name</shortDescription>
+        <value>Name</value>
     </labels>
     <labels>
         <fullName>LBL_Need_Search</fullName>
@@ -1576,25 +1226,11 @@
         <value>New Password</value>
     </labels>
     <labels>
-        <fullName>LBL_New_Group_Events</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL New Group Events</shortDescription>
-        <value>All Group Events</value>
-    </labels>
-    <labels>
         <fullName>LBL_News</fullName>
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>LBL_News</shortDescription>
         <value>News</value>
-    </labels>
-    <labels>
-        <fullName>LBL_NewsResultsTitle</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL NewsResultsTitle</shortDescription>
-        <value>News results for</value>
     </labels>
     <labels>
         <fullName>LBL_News_Alert</fullName>
@@ -1623,13 +1259,6 @@
         <protected>true</protected>
         <shortDescription>LBL NoUsersFound</shortDescription>
         <value>No Users have been found.</value>
-    </labels>
-    <labels>
-        <fullName>LBL_No_Files_Group</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL No Files Group</shortDescription>
-        <value>No files have been posted to this group.</value>
     </labels>
     <labels>
         <fullName>LBL_No_Upcoming_Events_Group</fullName>
@@ -1688,6 +1317,13 @@
         <value>commented in the {0} manager feed.</value>
     </labels>
     <labels>
+        <fullName>LBL_Oh_Snap</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL Oh Snap</shortDescription>
+        <value>Oh snap! Change a few things up and try submitting again.</value>
+    </labels>
+    <labels>
         <fullName>LBL_OldPassword</fullName>
         <language>en_US</language>
         <protected>true</protected>
@@ -1700,13 +1336,6 @@
         <protected>true</protected>
         <shortDescription>LBL Other</shortDescription>
         <value>Other</value>
-    </labels>
-    <labels>
-        <fullName>LBL_Overview</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL Overview</shortDescription>
-        <value>Overview</value>
     </labels>
     <labels>
         <fullName>LBL_Owner</fullName>
@@ -1744,13 +1373,6 @@
         <value>Pending</value>
     </labels>
     <labels>
-        <fullName>LBL_PendingRequestsDone_Message</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL PendingRequestsDone Message</shortDescription>
-        <value>Well done! No requests to review at this time.</value>
-    </labels>
-    <labels>
         <fullName>LBL_PendingRequestsManager_Title</fullName>
         <language>en_US</language>
         <protected>true</protected>
@@ -1758,25 +1380,25 @@
         <value>Pending Requests</value>
     </labels>
     <labels>
-        <fullName>LBL_PeopleIFollow</fullName>
+        <fullName>LBL_People</fullName>
         <language>en_US</language>
         <protected>true</protected>
-        <shortDescription>LBL PeopleIFollow</shortDescription>
-        <value>People I Follow</value>
+        <shortDescription>LBL People</shortDescription>
+        <value>People</value>
     </labels>
     <labels>
-        <fullName>LBL_PictureUploadModal_NoFile</fullName>
+        <fullName>LBL_People_Talking</fullName>
         <language>en_US</language>
         <protected>true</protected>
-        <shortDescription>LBL PictureUploadModal NoFile</shortDescription>
-        <value>No file chosen</value>
+        <shortDescription>LBL People Talking</shortDescription>
+        <value>people talking</value>
     </labels>
     <labels>
-        <fullName>LBL_PictureUploadModal_ShowPublicly</fullName>
+        <fullName>LBL_Person_Talking</fullName>
         <language>en_US</language>
         <protected>true</protected>
-        <shortDescription>LBL PictureUploadModal ShowPublicly</shortDescription>
-        <value>Show my photo on publicly accessible pages</value>
+        <shortDescription>LBL Person Talking</shortDescription>
+        <value>person talking</value>
     </labels>
     <labels>
         <fullName>LBL_PictureUploadModal_SizeWarning</fullName>
@@ -1786,25 +1408,11 @@
         <value>You can upload a JPG, GIF, or PNG file. Maximum file size is 8 MB.</value>
     </labels>
     <labels>
-        <fullName>LBL_PictureUploadModal_Title</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL PictureUploadModal Title</shortDescription>
-        <value>Upload Profile Photo</value>
-    </labels>
-    <labels>
         <fullName>LBL_Poll</fullName>
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>LBL Poll</shortDescription>
         <value>Poll</value>
-    </labels>
-    <labels>
-        <fullName>LBL_Poll_InputBox</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL Poll InputBox</shortDescription>
-        <value>What would you like to ask?</value>
     </labels>
     <labels>
         <fullName>LBL_Post</fullName>
@@ -1919,6 +1527,13 @@
         <value>Related Tags</value>
     </labels>
     <labels>
+        <fullName>LBL_Remove_From_Favorites</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL Remove From Favorites</shortDescription>
+        <value>Remove from favorites</value>
+    </labels>
+    <labels>
         <fullName>LBL_RequestToJoin</fullName>
         <language>en_US</language>
         <protected>true</protected>
@@ -1940,39 +1555,11 @@
         <value>This is a required field</value>
     </labels>
     <labels>
-        <fullName>LBL_ResourceResultsTitle</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL ResourceResultsTitle</shortDescription>
-        <value>Resource results for</value>
-    </labels>
-    <labels>
-        <fullName>LBL_Resources</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL_Resources</shortDescription>
-        <value>Resources</value>
-    </labels>
-    <labels>
-        <fullName>LBL_ResultsFoundTitle</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL ResultsFoundTitle</shortDescription>
-        <value>Results found for</value>
-    </labels>
-    <labels>
         <fullName>LBL_ReturnToGroup</fullName>
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>LBL ReturnToGroup</shortDescription>
         <value>Return To Group</value>
-    </labels>
-    <labels>
-        <fullName>LBL_Return_to_Group</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL Return to Group</shortDescription>
-        <value>Return to Group</value>
     </labels>
     <labels>
         <fullName>LBL_SaveChanges_Success</fullName>
@@ -2002,10 +1589,10 @@
         <shortDescription>LBL Search Help Tooltip</shortDescription>
         <value>&lt;br/&gt;&lt;div class=&quot;text-center&quot;&gt;&lt;strong&gt;Text search supports the following expression syntax&lt;/strong&gt;&lt;/div&gt;&lt;br/&gt;
 &lt;ul&gt;
-	&lt;li&gt;the use of quotes for exact phrase matching ex. &quot;this and that&quot; &lt;/li&gt;
-	&lt;li&gt;the use of wildcards ex. Biolog*&lt;/li&gt;
-	&lt;li&gt;the use of the reserved words - AND, OR, NOT  ex.  History AND Biology&lt;/li&gt;
-	&lt;li&gt;the use of parenthesis - ( )  ex.  History OR biology AND NOT ( &quot;class catalog&quot; )&lt;/li&gt;
+    &lt;li&gt;the use of quotes for exact phrase matching ex. &quot;this and that&quot; &lt;/li&gt;
+    &lt;li&gt;the use of wildcards ex. Biolog*&lt;/li&gt;
+    &lt;li&gt;the use of the reserved words - AND, OR, NOT  ex.  History AND Biology&lt;/li&gt;
+    &lt;li&gt;the use of parenthesis - ( )  ex.  History OR biology AND NOT ( &quot;class catalog&quot; )&lt;/li&gt;
 &lt;/ul&gt;</value>
     </labels>
     <labels>
@@ -2014,13 +1601,6 @@
         <protected>true</protected>
         <shortDescription>LBL Search Placeholder</shortDescription>
         <value>Search words with regular expressions...</value>
-    </labels>
-    <labels>
-        <fullName>LBL_Security_Question</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>Label Security Question</shortDescription>
-        <value>Security Question</value>
     </labels>
     <labels>
         <fullName>LBL_Select_Image</fullName>
@@ -2058,13 +1638,6 @@
         <value>Add Group(s)</value>
     </labels>
     <labels>
-        <fullName>LBL_Share_GroupList</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL Share GroupList</shortDescription>
-        <value>Selected Group(s)</value>
-    </labels>
-    <labels>
         <fullName>LBL_Share_Link_Name</fullName>
         <language>en_US</language>
         <protected>true</protected>
@@ -2077,13 +1650,6 @@
         <protected>true</protected>
         <shortDescription>LBL Share Link Url</shortDescription>
         <value>Link URL</value>
-    </labels>
-    <labels>
-        <fullName>LBL_Share_Placeholder</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL Share Placeholder</shortDescription>
-        <value>Say something about this link</value>
     </labels>
     <labels>
         <fullName>LBL_Share_To_A_Group</fullName>
@@ -2105,6 +1671,13 @@
         <protected>true</protected>
         <shortDescription>Label Shares a post I made</shortDescription>
         <value>Shares a post I made</value>
+    </labels>
+    <labels>
+        <fullName>LBL_Show</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL Show</shortDescription>
+        <value>Show</value>
     </labels>
     <labels>
         <fullName>LBL_ShowManagersOnly</fullName>
@@ -2135,6 +1708,13 @@
         <value>Show All</value>
     </labels>
     <labels>
+        <fullName>LBL_Sorted_By</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LBL Sorted By</shortDescription>
+        <value>Sorted by</value>
+    </labels>
+    <labels>
         <fullName>LBL_TagHelper_Link</fullName>
         <language>en_US</language>
         <protected>true</protected>
@@ -2163,13 +1743,6 @@
         <value>We will use variations of this thumbnail image around the application.</value>
     </labels>
     <labels>
-        <fullName>LBL_ToMe</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL ToMe</shortDescription>
-        <value>To Me</value>
-    </labels>
-    <labels>
         <fullName>LBL_Today_is</fullName>
         <language>en_US</language>
         <protected>true</protected>
@@ -2184,25 +1757,11 @@
         <value>Topics</value>
     </labels>
     <labels>
-        <fullName>LBL_Turn_Off_Group_Email</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>LBL Turn Off Group Email</shortDescription>
-        <value>Turn Off Group Email</value>
-    </labels>
-    <labels>
-        <fullName>LBL_TypeAName</fullName>
+        <fullName>LBL_Topics</fullName>
         <language>en_US</language>
         <protected>true</protected>
-        <shortDescription>LBL TypeAName</shortDescription>
-        <value>Type A Name...</value>
-    </labels>
-    <labels>
-        <fullName>LBL_Type_Group_Name</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL_Type_Group_Name</shortDescription>
-        <value>Type a Group Name...</value>
+        <shortDescription>LBL Topics</shortDescription>
+        <value>Topics</value>
     </labels>
     <labels>
         <fullName>LBL_Upcoming_Events</fullName>
@@ -2217,13 +1776,6 @@
         <protected>true</protected>
         <shortDescription>LBL Update Managers</shortDescription>
         <value>Update Managers</value>
-    </labels>
-    <labels>
-        <fullName>LBL_UploadFromComputer</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL UploadFromComputer</shortDescription>
-        <value>Upload file from your computer</value>
     </labels>
     <labels>
         <fullName>LBL_Upload_File</fullName>
@@ -2261,20 +1813,6 @@
         <value>Verify New Password</value>
     </labels>
     <labels>
-        <fullName>LBL_Weekly_Digest</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>LBL Weekly Digest</shortDescription>
-        <value>Weekly Digest</value>
-    </labels>
-    <labels>
-        <fullName>LBL_WhatIFollow</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>LBL WhatIFollow</shortDescription>
-        <value>What I Follow</value>
-    </labels>
-    <labels>
         <fullName>LBL_When</fullName>
         <language>en_US</language>
         <protected>true</protected>
@@ -2294,27 +1832,6 @@
         <protected>true</protected>
         <shortDescription>MSG Group Name Available</shortDescription>
         <value>The Group Name you have selected is available.</value>
-    </labels>
-    <labels>
-        <fullName>Messages_BTN_NewMessage</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>Messages_BTN_NewMessage</shortDescription>
-        <value>New Message</value>
-    </labels>
-    <labels>
-        <fullName>Messages_PageTitle</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>Messages_PageTitle</shortDescription>
-        <value>My Messages</value>
-    </labels>
-    <labels>
-        <fullName>Messages_SearchAllMessages</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>Messages_SearchAllMessages</shortDescription>
-        <value>Search All Messages</value>
     </labels>
     <labels>
         <fullName>NAV_Discover</fullName>
@@ -2357,40 +1874,5 @@
         <protected>true</protected>
         <shortDescription>NAV Resources</shortDescription>
         <value>Resources</value>
-    </labels>
-    <labels>
-        <fullName>People_Follow</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>People_Follow</shortDescription>
-        <value>Follow</value>
-    </labels>
-    <labels>
-        <fullName>People_Following</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>People_Following</shortDescription>
-        <value>Following</value>
-    </labels>
-    <labels>
-        <fullName>People_Name</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>People_Name</shortDescription>
-        <value>Name</value>
-    </labels>
-    <labels>
-        <fullName>People_PeopleIFollow</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>People_PeopleIFollow</shortDescription>
-        <value>People I Follow</value>
-    </labels>
-    <labels>
-        <fullName>People_TypeAName</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>People_TypeAName</shortDescription>
-        <value>Type a Name</value>
     </labels>
 </CustomLabels>
