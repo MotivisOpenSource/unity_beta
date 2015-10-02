@@ -3,7 +3,7 @@
 	<apex:attribute name="ft" type="String" assignTo="{!feedType}" required="false" description="Feed Type" />
 	<apex:attribute name="ti" type="String" assignTo="{!topicId}" required="false" description="Topic Id" />
 	<apex:attribute name="fm" type="Boolean" assignTo="{!fullMode}" required="false" default="true" description="Full Mode" />
-	<apex:attribute name="fu" type="Boolean" assignTo="{!showFileUpload}" required="false" default="true" description="Show File Upload" />
+	<apex:attribute name="fu" type="Boolean" assignTo="{!showFileUpload}" required="false" default="false" description="Show File Upload" />
 	<apex:attribute name="sjcb" type="Boolean" required="false" default="false" description="show Join the Conversation button" />
 	<apex:attribute name="tf" type="Boolean" required="false" default="false" description="show feeds from" />
 	<apex:attribute name="gID" type="Boolean" assignTo="{!grID}" required="false" default="false" description="ID for Group" />
@@ -16,7 +16,6 @@
 	<script type="text/javascript" src="/soap/ajax/33.0/connection.js"></script>
 	<script type="text/javascript" src="{!$Resource.assets}/plugins/ImageLoad/load-image.all.min.js"></script>
 	<script type="text/javascript" src="{!$Resource.assets}/plugins/hashtagsinput/jquery_hashtagsinput.js" ></script>
-	
 
 	<apex:stylesheet value="{!$Resource.assets}/plugins/datetimepicker/jquery.datetimepicker.css" />
 	<script type="text/javascript" src="{!$Resource.assets}/plugins/datetimepicker/jquery.datetimepicker.js"></script>
@@ -54,9 +53,9 @@
 			</script>
 			<script id="tto" type="text/template">
 				<% _.each(rc.elements, function(p){ %>
-				<div class="comment">
+				<div class="comment media-body">
 					<img src="<%= p.actor.photo.smallPhotoUrl %>" alt=""/>
-					<div class="overflow-h">
+					<div class="overflow-h" onclick="window.location.href = '<%= p.parentLink %>';">
 						<strong><%= p.actor.displayName %> <%= p.actor.role !== null ?  '(' + p.actor.role + ')': '' %> <small class="pull-right"><%= p.dateStr %></small></strong>
 						<% if(p.parentType != null && {!tf}){ %>
 							<p><strong><a class="<%= p.parentIcon %> font-weight-bold" href="<%= p.parentLink %>"> <%= p.parentType %> - <%= p.parentName %> <% if(p.parentAcssesType != null){ %> (<%= p.parentAcssesType %>) <% } %></a>
@@ -65,6 +64,17 @@
 						<p><% 	var pp = parseFeedBody(p.body,p.topicsUser);
 								print(wrapnl(pp)); %>
 						</p>
+
+						<% if (p.showLink) { %>
+						<div class="d-link">
+						<a href="<%= p.linkHref %>" target="_blank" >
+							<i class="fa fa-link"></i>
+							<%= p.linkName %><br>
+						</a>
+						<% print(wrapnl(p.linkHref)); %>
+						</div>
+						<% } %>
+
 						<ul class="list-inline comment-list">
 							<li><i class="fa fa-comments"></i> <a href="#"><%= p.total %></a></li>
 						</ul>
@@ -123,6 +133,7 @@
 						<% if (!p2.showLink && !p2.showContent && !p2.capabilities.poll) { %>
 							<p>	<% var p2p = parseFeedBody(p2.body,p2.topicsUser);
 								print(wrapnl(p2p)); %>
+<<<<<<< HEAD
 							</p>
 						<%}%>
 						<% if (p2.showLink) { %>
@@ -136,6 +147,7 @@
 						</a>
 						<% print(wrapnl(p2.linkHref)); %>
 						</div>
+							</p>
 						<% } %>
 						<% if (p2.showContent) { %>
 							<p>	<% var p2p = parseFeedBody(p2.body,p2.topicsUser);
