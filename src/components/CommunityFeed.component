@@ -133,7 +133,6 @@
 						<% if (!p2.showLink && !p2.showContent && !p2.capabilities.poll) { %>
 							<p>	<% var p2p = parseFeedBody(p2.body,p2.topicsUser);
 								print(wrapnl(p2p)); %>
-<<<<<<< HEAD
 							</p>
 						<%}%>
 						<% if (p2.showLink) { %>
