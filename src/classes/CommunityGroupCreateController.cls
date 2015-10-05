@@ -9,6 +9,8 @@ public with sharing class CommunityGroupCreateController {
 	public CommunityFieldLayout flayout { get;set; }
 
 	// photo positions vars
+	public String photoContentType { get; set; }
+	public String blobImageData { get; set; }
 	public String cropXCr { get; set; }
 	public String cropYCr { get; set; }
 	public String cropSizeCr { get; set; }
@@ -74,8 +76,17 @@ public with sharing class CommunityGroupCreateController {
 				pr.getParameters().put('step', String.isBlank(currentGroup.Chatter_Group_ID__c) ? '3' : '2');
 			}
 			else if (step == 2) {
-				if (imageBody != NULL) {
+				if (blobImageData != NULL) {
+					Blob bl;				
+					bl = EncodingUtil.base64Decode(blobImageData);
 				    ConnectApi.PhotoInput pi = new ConnectApi.PhotoInput();
+				    System.debug('blob');
+				    System.debug( blobImageData);
+				    System.debug( photoContentType);
+				    System.debug( cropXCr);
+				    System.debug( cropYCr);
+				    System.debug( cropSizeCr);
+
 				    pi.cropX = Integer.valueOf(cropXCr);
 				    pi.cropY = Integer.valueOf(cropYCr);
 				    pi.cropSize = Integer.valueOf(cropSizeCr)-1;
@@ -83,7 +94,7 @@ public with sharing class CommunityGroupCreateController {
 					    Network.getNetworkId(), 
 					    currentGroup.Chatter_Group_ID__c,
 					    pi,
-					    new ConnectApi.BinaryInput(imageBody, imageContentType, imageFileName)
+					    new ConnectApi.BinaryInput(bl, photoContentType, 'image.jpg')
 					    );
 					update currentGroup;
 				}

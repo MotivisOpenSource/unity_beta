@@ -46,7 +46,7 @@ public with sharing class CommunityFeedNavigationController {
 	    
 	}
 	// photo vars
-	public Blob photoBody { get; set; }
+	public String blobImageData { get; set; }
 	public String photoName { get; set; }
 	public String photoContentType { get; set; }
 	public Boolean currentUser { get; set; }
@@ -118,32 +118,27 @@ public with sharing class CommunityFeedNavigationController {
 	
 	public PageReference photoaction() {
 		try {		
-			if (photoBody != NULL) {
-				System.debug(photoBody);
-				System.debug(photoContentType);
+			if (blobImageData != NULL) {
+				Blob bl;				
+				bl = EncodingUtil.base64Decode(blobImageData);
 				ConnectApi.PhotoInput pi = new ConnectApi.PhotoInput();
 				pi.cropX = Integer.valueOf(cropX);
 				pi.cropY = Integer.valueOf(cropY);
 				pi.cropSize = Integer.valueOf(cropSize)-1;
-				System.debug(pi);
 				if (getGroupId != null) {
 					ConnectApi.ChatterGroups.setPhotoWithAttributes(
     					Network.getNetworkId(),
     					getGroupId,
     					pi,
-    					new ConnectApi.BinaryInput(photoBody, photoContentType, photoName)
-					); 
+    					new ConnectApi.BinaryInput(bl, photoContentType, 'image.jpg')); 
 				}
 				else {
 				    ConnectApi.ChatterUsers.setPhotoWithAttributes(
         				Network.getNetworkId(),
         				UserInfo.getUserId(), // it could be that another id
         				pi,
-        				new ConnectApi.BinaryInput(photoBody, photoContentType, photoName)
-        			);
+        				new ConnectApi.BinaryInput(bl, photoContentType, 'image.jpg'));
 				}
-				    
-				
 			}
 			PageReference pr = new PageReference(ApexPages.currentPage().getUrl());
 			pr.setRedirect(true);
@@ -154,8 +149,5 @@ public with sharing class CommunityFeedNavigationController {
 			ApexPages.addMessages(e);
 			return null;
 		}
-		
 	}
-	
-	
 }
