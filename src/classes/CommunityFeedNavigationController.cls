@@ -21,7 +21,7 @@ public with sharing class CommunityFeedNavigationController {
 		Boolean result = false;
 		if (String.isNotBlank(chatterGroupId)) {
 			List<Community_Group_Manager__c> cgmList = [SELECT Id FROM Community_Group_Manager__c WHERE Group_Manager_User__c = :UserInfo.getUserId() AND Group_Control__r.Chatter_Group_ID__c = :chatterGroupId];
-			result = cgmList.size() > 0;
+			result = (cgmList.size() == 0) ? (CommunityUtils.isModifyAllData() && !CommunityUtils.checkGroupOwnerIsActive(chatterGroupId)) : true;
 		}
 		return result;
 	}
@@ -145,7 +145,6 @@ public with sharing class CommunityFeedNavigationController {
 			return pr;
 		}
 		catch(Exception e) {
-			System.Debug('error');
 			ApexPages.addMessages(e);
 			return null;
 		}

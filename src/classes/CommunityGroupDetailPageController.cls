@@ -135,9 +135,10 @@ public with sharing class CommunityGroupDetailPageController {
 	public Boolean showCreateEvent {
 		get {
 			return chatterGroup != NULL
-					&& SObjectType.Community_Events__c.isCreateable()
-					&& SObjectType.Community_Event_Tag__c.isCreateable()
-					&& (groupRole == ConnectApi.GroupMembershipType.GroupOwner || groupRole == ConnectApi.GroupMembershipType.GroupManager || groupRole == ConnectApi.GroupMembershipType.StandardMember);
+					&& (CommunityUtils.isModifyAllData()
+						|| SObjectType.Community_Events__c.isCreateable()
+						&& SObjectType.Community_Event_Tag__c.isCreateable()
+						&& (groupRole == ConnectApi.GroupMembershipType.GroupOwner || groupRole == ConnectApi.GroupMembershipType.GroupManager || groupRole == ConnectApi.GroupMembershipType.StandardMember));
 		}
 	}
 
@@ -169,7 +170,7 @@ public with sharing class CommunityGroupDetailPageController {
 	public CommunityGroupFilesController getFilesController() {
 		CommunityGroupFilesController cgfc = new CommunityGroupFilesController();
 		if (showFilesSection) {
-			cgfc.chatterGroupId = chatterGroup.Id;
+			cgfc.parentId = chatterGroup.Id;
 			cgfc.init();
 		}
 		return cgfc;

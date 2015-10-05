@@ -30,6 +30,10 @@ public with sharing class CommunityGroupManageController {
 	public static Community_Group_Control__c pullGroupControlRecord(Boolean useFieldSet) {
 		String chatterGroupId = ApexPages.currentPage().getParameters().get('gr');
 		String groupControlId = ApexPages.currentPage().getParameters().get('gc');
+		return pullGroupControlRecord(useFieldSet, chatterGroupId, groupControlId);
+	}
+
+	public static Community_Group_Control__c pullGroupControlRecord(Boolean useFieldSet, String chatterGroupId, String groupControlId) {
 		if (String.isNotBlank(chatterGroupId) || String.isNotBlank(groupControlId)) {
 			Set<String> collectedFields = new Set<String> {'Id', 'Name', 'Chatter_Group_ID__c', 'Type__c', 'OwnerId', 'UserRecordAccess.HasEditAccess'};
 			if (useFieldSet) {
@@ -101,7 +105,7 @@ public with sharing class CommunityGroupManageController {
 
 	public Boolean getUserCanAccess() {
 		Integer userHasCGM = [SELECT COUNT() FROM Community_Group_Manager__c WHERE Group_Manager_User__c =:UserInfo.getUserId() AND Group_Control__c =:control.Id];
-		return userHasCGM > 0;
+		return userHasCGM > 0 || (CommunityUtils.isModifyAllData() && !CommunityUtils.checkGroupOwnerIsActive(control.Chatter_Group_ID__c));
 	}
 
 	//ADD/REMOVE MEMBERS/MANAGERS
@@ -422,10 +426,18 @@ public with sharing class CommunityGroupManageController {
 			manager = inManager;
 		}
 	}
-	
+
+	//getTagsCount
+	public Boolean getRequiredTags() {
+		Community_Settings__c cs = Community_Settings__c.getInstance();
+		return cs != NULL && cs.Create_Group_Require_Tags__c == true;
+	}
+
 	public Integer getTagsCount() {
 		Community_Settings__c cs = Community_Settings__c.getInstance();
-		return Integer.valueOf(cs.Create_Group_Max_Tags__c);
+		return (cs != NULL && cs.Create_Group_Max_Tags__c != NULL)
+				? Integer.valueOf(cs.Create_Group_Max_Tags__c)
+				: -1;
 	}
 	
 	private final String TAGS_INPUT_NAME = 'tags';
