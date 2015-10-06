@@ -98,6 +98,7 @@
         <members>CommunityProfile</members>
         <members>CommunityResource</members>
         <members>Contact</members>
+        <members>NetworkMember</members>
         <members>User</members>
         <name>ApexTrigger</name>
     </types>
@@ -332,7 +333,6 @@
         <members>LBL_AddToCalendar</members>
         <members>LBL_Add_Photo</members>
         <members>LBL_Add_Remove_Members</members>
-        <members>LBL_Admin_Page_Group_Tag_Setting_Error</members>
         <members>LBL_Add_To_Favorites</members>
         <members>LBL_AgreeToTerms</members>
         <members>LBL_AllGroups</members>
@@ -357,7 +357,6 @@
         <members>LBL_CreateGroup_NoTagsMessage</members>
         <members>LBL_CreateGroup_PictureUpload</members>
         <members>LBL_CreateGroup_Tags</members>
-        <members>LBL_Create_Max_Tag_Reached_Error</members>
         <members>LBL_Current_Events_Title</members>
         <members>LBL_All</members>
         <members>LBL_Topics_I_Use</members>
@@ -535,6 +534,7 @@
         <members>LBL_Upload_File</members>
         <members>LBL_Upload_Group_Photo</members>
         <members>LBL_Upload_Profile_Photo</members>
+        <members>LBL_User_Not_Available</members>
         <members>LBL_Username</members>
         <members>LBL_VerifyNewPassword</members>
         <members>LBL_When</members>
