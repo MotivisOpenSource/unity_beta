@@ -38,7 +38,8 @@
 								}
 								if (ds) {
 							if({!step == 2}) {
-								savePhoto();
+							    if (pt!== undefined)
+									savePhoto();
 							}
 									dosubmit();
 								}

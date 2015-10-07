@@ -76,7 +76,7 @@ public with sharing class CommunityGroupCreateController {
 				pr.getParameters().put('step', String.isBlank(currentGroup.Chatter_Group_ID__c) ? '3' : '2');
 			}
 			else if (step == 2) {
-				if (blobImageData != NULL) {
+				if (blobImageData.length()>0) {
 					Blob bl;				
 					bl = EncodingUtil.base64Decode(blobImageData);
 				    ConnectApi.PhotoInput pi = new ConnectApi.PhotoInput();
