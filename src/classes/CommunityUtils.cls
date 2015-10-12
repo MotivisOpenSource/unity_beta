@@ -461,16 +461,10 @@ public with sharing class CommunityUtils {
 
 	public static Set<Id> checkGroupManagers(Set<Id> userIds) {
 		Set<Id> collaborationMemberIds = new Set<Id>();
-		Set<Id> expectedGroupsIds = new Set<Id>();
-		for (Community_Group_Control__c gc : [SELECT Id, Chatter_Group_ID__c FROM Community_Group_Control__c]) {
-			expectedGroupsIds.add(gc.Chatter_Group_ID__c);
-		}
 		List<CollaborationGroupMember> collaborationAdmins = [
 			SELECT Id, CollaborationGroupId, CollaborationRole, MemberId 
 			FROM CollaborationGroupMember 
-			WHERE CollaborationRole = 'Admin'
-				AND MemberId IN :userIds
-				AND CollaborationGroupId IN :expectedGroupsIds
+			WHERE CollaborationRole = 'Admin' AND MemberId IN :userIds
 		];
 		Map<Id, Set<Id>> groupAdminMap = new Map<Id, Set<Id>>();
 		for (CollaborationGroupMember gm : collaborationAdmins) {
@@ -482,8 +476,7 @@ public with sharing class CommunityUtils {
 		List<Community_Group_Manager__c> groupManagers = [
 			SELECT Id, Group_Control__r.Chatter_Group_ID__c, Group_Manager_User__c, Manager_Role__c 
 			FROM Community_Group_Manager__c
-			WHERE Group_Control__r.Chatter_Group_ID__c IN :expectedGroupsIds
-				AND Group_Manager_User__c IN :groupAdminMap.keySet()
+			WHERE Group_Manager_User__c IN :groupAdminMap.keySet()
 		];
 		Map<Id, Set<Id>> groupManagersMap = new Map<Id, Set<Id>>();
 		for (Community_Group_Manager__c gm : groupManagers) {
@@ -493,10 +486,8 @@ public with sharing class CommunityUtils {
 			groupManagersMap.get(gm.Group_Manager_User__c).add(gm.Group_Control__r.Chatter_Group_ID__c);
 		}
 		for (CollaborationGroupMember gm : collaborationAdmins) {
-			if (expectedGroupsIds.contains(gm.CollaborationGroupId)) {
-				if (!groupManagersMap.containsKey(gm.MemberId) || !groupManagersMap.get(gm.MemberId).contains(gm.CollaborationGroupId)) {
-					collaborationMemberIds.add(gm.Id);
-				}
+			if (!groupManagersMap.containsKey(gm.MemberId) || !groupManagersMap.get(gm.MemberId).contains(gm.CollaborationGroupId)) {
+				collaborationMemberIds.add(gm.Id);
 			}
 		}
 		return collaborationMemberIds;
