@@ -12,4 +12,6 @@ The current stable release is found in the releases tab (using the release/X.X t
 # Roadmap and other documentation
 The [wiki](https://github.com/MotivisOpenSource/unity/wiki) for this repository provides links to a support site that is kept current. 
 
+# Licensing
+Unity is released under the [open source GPL 3.0 license](http://opensource.org/licenses/GPL-3.0).
 
