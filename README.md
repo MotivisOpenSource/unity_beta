@@ -1,7 +1,5 @@
-# unity
+# Unity
 Unity is a powerful networking tool to help you generate engagement and connect your campus.
-
-
 
 
 # Appexchange Listing
